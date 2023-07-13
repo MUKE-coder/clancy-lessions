@@ -1,0 +1,62 @@
+/* Browser reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box {
+  color: white;
+  width: 200px;
+  height: 100px;
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.box-1 {
+  background-color: black;
+  transition: all 0.5s ease;
+}
+.box-2 {
+  background-color: red;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-section {
+  background: darkmagenta;
+}
+.second-section {
+  background: linear-gradient(to bottom, darkblue, skyblue);
+}
+.third-section {
+  background: linear-gradient(45deg, darkblue, pink, skyblue);
+  /* background: linear-gradient(to bottom right, darkblue, pink, skyblue); */
+}
+.fourth-section {
+  background: url(./bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.fifth-section {
+  background: linear-gradient(
+      45deg,
+      rgba(0, 0, 139, 0.8),
+      rgba(255, 192, 203, 0.8),
+      rgba(135, 207, 235, 0.8)
+    ),
+    url(./bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.box-1:hover {
+  background-color: blue;
+}

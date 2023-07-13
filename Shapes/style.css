@@ -1,0 +1,61 @@
+/* Browser rest */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 350px;
+  background-color: aliceblue;
+  height: auto;
+  position: relative;
+}
+.icon {
+  position: absolute;
+  z-index: 1;
+  font-size: 25px;
+  color: white;
+}
+.menu-icon {
+  left: 5px;
+  top: 5px;
+}
+.message-icon {
+  top: 5px;
+  right: 5px;
+}
+.plus-icon {
+  top: 35%;
+  right: 20px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(240, 248, 255, 0.695),
+    rgba(0, 0, 255, 0.483)
+  );
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.card_top {
+  height: 200px;
+  background: linear-gradient(
+      to bottom right,
+      rgba(240, 248, 255, 0.695),
+      rgba(0, 0, 255, 0.483)
+    ),
+    url(./profile.jpg);
+  background-size: cover;
+  background-position: left center;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}

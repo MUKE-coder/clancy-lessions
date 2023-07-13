@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: red;
+}
+section {
+  padding: 5rem;
+  min-height: 100vh;
+}
+header a {
+  color: black;
+}
+nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+nav a {
+  font-size: 1.3rem;
+}
+nav a:hover {
+  color: red;
+}
+.logo {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.hero-section {
+  background: linear-gradient(
+      to right,
+      black,
+      rgba(0, 0, 139, 0.896),
+      rgba(255, 255, 255, 0.591)
+    ),
+    url("./bg.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.content {
+  max-width: 500px;
+  color: whitesmoke;
+  /* background-color: blanchedalmond; */
+}
+.hero-heading {
+  font-size: 3.5rem;
+
+  margin-bottom: 1rem;
+}
+.hero-heading span {
+  color: blue;
+}
+.buttons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.buttons a {
+  padding: 1rem 3rem;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+.in-touch-btn {
+  background-color: blue;
+}
+.see-works-btn {
+  border: 1px solid white;
+  background-color: black;
+}
+.about-image {
+  width: 100%;
+}
+.about-image img {
+  width: 100%;
+}
+/* MEDIA QUERIES */
+@media (max-width: 800px) {
+  .hero-section {
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.839),
+        rgba(0, 0, 139, 0.696),
+        rgba(255, 255, 255, 0.591)
+      ),
+      url("./mobile.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+}
+@media (max-width: 640px) {
+  header {
+    padding: 1rem 3rem;
+  }
+}
+@media (max-width: 600px) {
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+  section {
+    padding: 2rem;
+  }
+}
+@media (max-width: 552px) {
+  nav {
+    display: none;
+  }
+}
+button {
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 552px) {
+  button {
+    display: block;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .content {
+    max-width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  header {
+    padding: 1rem 1.5rem;
+  }
+  .logo {
+    font-size: 1.8rem;
+  }
+}

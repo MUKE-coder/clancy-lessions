@@ -1,0 +1,74 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+/* Browser reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  background: linear-gradient(to right, rgb(249, 9, 9), tomato);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 400px;
+  height: auto;
+  background-color: white;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 2px dashed gray;
+}
+.left-side {
+  width: 65%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.details h2 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.details {
+  margin-bottom: 30px;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+button {
+  padding: 10px 30px;
+  width: 150px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 2px solid black;
+}
+.right-side {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: red;
+  justify-content: space-between;
+}
+.post-card {
+  background: tomato;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 33.33%;
+}

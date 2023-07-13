@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2 {
+  font-size: 80px;
+  color: white;
+}
+.text-blue {
+  color: blue;
+}
+section {
+  min-height: 100vh;
+  background-color: black;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.blockvsIn {
+  background-color: blanchedalmond;
+  color: black;
+}
+.blockvsIn p {
+  background-color: black;
+  color: white;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: row;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.computer-section {
+  display: flex;
+  background-color: white;
+  /* flex-wrap: wrap; */
+  gap: 2rem;
+}
+.computer-section h2 {
+  color: black;
+  font-size: 2rem;
+}
+.left {
+  width: 50%;
+  background-color: red;
+}
+.left img {
+  width: 100%;
+}
+.right {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .computer-section {
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    width: 90%;
+  }
+  h2 {
+    font-size: 50px;
+  }
+  section {
+    background-color: red;
+  }
+  nav {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 25px;
+  }
+  section {
+    background-color: aqua;
+  }
+  .computer-section h2 {
+    font-size: 1rem;
+  }
+}

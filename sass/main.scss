@@ -1,0 +1,25 @@
+$section-padding: 3rem;
+// Nesting
+.hero-section {
+  h2 {
+    font-size: 6rem;
+    @media (max-width: 610px) {
+      font-size: 3rem;
+    }
+  }
+  button {
+    background-color: red;
+    color: wheat;
+    padding: 1rem 3rem;
+    &:hover {
+      background-color: blue;
+    }
+  }
+}
+//Variables
+section {
+  padding: $section-padding;
+}
+header {
+  padding: $section-padding;
+}

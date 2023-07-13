@@ -1,0 +1,24 @@
+.hero-section h2 {
+  font-size: 6rem;
+}
+@media (max-width: 610px) {
+  .hero-section h2 {
+    font-size: 3rem;
+  }
+}
+.hero-section button {
+  background-color: red;
+  color: wheat;
+  padding: 1rem 3rem;
+}
+.hero-section button:hover {
+  background-color: blue;
+}
+
+section {
+  padding: 3rem;
+}
+
+header {
+  padding: 3rem;
+}
